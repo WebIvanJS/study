@@ -50,6 +50,5 @@ const storeDescription = {
 alert('Hello');
 
 const result = confirm ('Are you hear?');
-
-
+ confirm ('Are you hear?');
 
