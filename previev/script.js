@@ -51,5 +51,5 @@ alert('Hello');
 
 const result = confirm ('Are you hear?');
  confirm ('Are you hear?');
-console.log('111');
+console.log('111222');
 
