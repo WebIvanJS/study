@@ -23,4 +23,3 @@ personalMovieDb.movies[c] = d;
 
 
 console.log(personalMovieDb);
-13435t
