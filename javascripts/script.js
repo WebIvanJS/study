@@ -189,3 +189,115 @@ function getMathResult(num, times) {
 }
 
 getMathResult(10, 5);
+
+
+function calculateVolumeAndArea(a) {
+    if(Math.sign(a) != -1 && a != 0 && Number.isInteger(a) ) {
+        let vol = a * a * a
+        console.log(vol);
+        console.log('ok');
+    } else {
+        console.log('Error!');
+    }
+
+}
+calculateVolumeAndArea(5);
+
+
+function numberOfSeat (seatNumber) {
+    if( seatNumber !=0 && Number.isInteger(seatNumber) && seatNumber <= 36 ) {
+        console.log('ok');
+        for(let i = 4; i <= 36; i= i + 4 ) {
+            if (seatNumber <= i) {
+                return Math.ceil(i/4);
+            }
+        }
+
+    }
+
+
+
+}
+
+console.log(numberOfSeat (25));
+
+function getCoupeNumber(seatNumber) {
+    if (typeof(seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+        return "Ошибка. Проверьте правильность введенного номера места";
+    }
+
+    if (seatNumber === 0 || seatNumber > 36) {
+        return "Таких мест в вагоне не существует";
+    }
+
+    for (let i = 4; i <= 36; i = i + 4) {
+        if (seatNumber <= i) {
+            return Math.ceil(i / 4);
+        }
+    }
+    // тут очень много вариантов решения, но выбрал один из элегантных :)
+}
+
+console.log(getCoupeNumber(3));
+
+
+function getTimeFromMinutes(n) {
+    let hour = Math.floor(n / 60);
+    let min = n - hour * 60;
+
+    if(hour > 0 ) {
+        console.log(`Це ${hour} години і ${min} хвилин! `);
+
+
+
+    }
+
+
+    console.log(hour);
+    console.log(min);
+
+}
+getTimeFromMinutes(500) 
+
+
+
+let arr = [5, 2, 1, -10, 8];
+
+arr.sort((a, b) => b - a);
+
+console.log( arr );
+
+let myarray=[1, 5, 6.6, 41]
+myarray.sort(function(a,b){ 
+  return a - b
+}) 
+
+
+console.log( myarray[myarray.length - 1], myarray );
+
+
+function fib(num) {
+
+
+    let result = '';
+    let first = 0;
+    let second = 1;
+
+    for (let i = 0; i < num; i++) {
+
+            result += `${first} `;
+        
+
+        let third = first + second;
+        first = second;
+        second = third;
+    }
+
+    return result;
+}
+
+console.log(fib(7));
+
+
+
+
