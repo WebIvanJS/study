@@ -24,3 +24,11 @@ const link = document.querySelector('a');
 link.addEventListener('click', function(event) {
     event.preventDefault();
 });
+
+
+function factorial(n) {
+   return n ? n * factorial(n - 1) : 1;
+  
+}
+
+console.log(factorial(5));
