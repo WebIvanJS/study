@@ -11,7 +11,7 @@ btn.onclick = function () {
 
 
 btn.addEventListener('click', (e) => {
-   e.target.remove().;
+   e.target.remove();
 });
 
 
